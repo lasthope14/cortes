@@ -55,6 +55,7 @@ DB_PASSWORD=
 ```bash
 php artisan test
 php artisan workbook:analyze "ruta\\al\\archivo.xlsx"
+php artisan contract:import "ruta\\al\\archivo.xlsx"
 ```
 
 ## Siguiente paso recomendado

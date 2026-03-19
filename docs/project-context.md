@@ -131,7 +131,7 @@ Tipos:
 - Modelos Eloquent
 - Enums para estados y tipos
 - Dashboard inicial
-- Servicio base de importacion
+- Importador real de la caratula contractual
 - Servicio base de exportacion
 - Analizador real del workbook via Laravel
 - Configuracion `.env.example` orientada a MySQL
@@ -140,15 +140,18 @@ Tipos:
 ### Comando disponible
 ```bash
 php artisan workbook:analyze "ruta\\al\\archivo.xlsx"
+php artisan contract:import "ruta\\al\\archivo.xlsx"
 ```
 
 ## 8. Resultado de validacion hecho antes del push
 - `php artisan migrate:fresh --force`
 - `php artisan test`
+- `php artisan contract:import "..\\corte medellin hacer.xlsx"`
 
 Resultado:
 - migraciones correctas
-- 3 pruebas pasando
+- 4 pruebas pasando
+- importacion real del workbook validada
 
 ## 9. Archivos clave del proyecto
 - `app/Models`
